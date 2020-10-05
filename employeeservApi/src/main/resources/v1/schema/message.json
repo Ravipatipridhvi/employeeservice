@@ -1,0 +1,33 @@
+{
+  "title": "Message model for statuses",
+  "description": "Message model object",
+  "type": "object",
+  "properties": {
+    "id": {
+      "description": "message id",
+      "type": "integer"
+    },
+    "type": {
+      "description": "message type error or success",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "message": {
+      "description": "message",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    },
+    "messageId": {
+      "description": "message id in case of error",
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 255
+    }
+  },
+  "required": [
+    "message",
+    "type"
+  ]
+}
